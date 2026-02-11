@@ -1,0 +1,18 @@
+
+
+
+nome = input("qual seu nome:")
+velocidade = float(input("qual a velocidade que você estava:"))
+
+velocidade_limite = 80
+multa_KM = 8.00
+
+if velocidade > velocidade_limite:
+    exesso = velocidade - velocidade_limite
+    multa = exesso * multa_KM
+    print(f"{nome}:você foi multado pois estava em exesso {exesso:.1f}, de velocidade:")
+    print(f"o valor da sua multa é {multa}")
+else:
+    print(f"{nome}:você esta na velocidade limite! Boa viagem.")
+
+

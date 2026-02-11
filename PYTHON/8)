@@ -1,0 +1,20 @@
+
+nm = int(input("digite o numero do seu imovel:"))
+quantidade_KWh = float(input("digite a sua quantidade de KWh consumidos no mes: "))
+
+if quantidade_KWh <= 100:
+    valor_KWh = quantidade_KWh * 0.5
+else:
+    if quantidade_KWh >= 101 and quantidade_KWh <=200:
+        valor_KWh = quantidade_KWh * 0.7 
+    else:
+        if quantidade_KWh >= 200:
+            valor_KWh = quantidade_KWh * 0.87 
+
+if quantidade_KWh > 150:
+    valor_taxa = valor_KWh * 1.12
+    print(f"o seu imovel numero {nm}, teve o consumo de {quantidade_KWh:.2f}. ") 
+    print(f"o valor da sua taxa é {valor_taxa:.2f}.")
+else:
+    print(f"o seu imovel numero {nm}, teve o consumo de {quantidade_KWh:.2f}. ") 
+    print(f"o valor da sua taxa é {valor_KWh:.2f}.")

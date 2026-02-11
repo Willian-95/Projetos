@@ -1,0 +1,18 @@
+
+idade = int(input("digite sua idade:"))
+hpd = float(input("digite suas horas trabalhadas por dia:"))
+hph = float(input("digite quanto você ganha por hora:"))
+
+total_horas_semanal = hpd * 5 
+total_salario_semanal = hph * total_horas_semanal
+
+if idade <18:
+    print("você não deveria estar trabalhando.")
+
+if idade >= 18 and idade <=60:
+    print(f"você é adulto seu salario semanal é {total_salario_semanal:.2f}.")
+
+if idade >= 60:
+    print(f"você é é idoso! Cuide da sia saúde. Seu salario semanal é {total_salario_semanal:.2f}.")
+    
+

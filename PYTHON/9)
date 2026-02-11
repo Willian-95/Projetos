@@ -1,0 +1,18 @@
+
+
+
+nome = str(input("digite seu nome:"))
+sexo = input("digite seu sexo (M/F):"). upper()
+idade = int(input("digite sua idade:"))
+saude = input("voce esta em bom estado de saude? (S/N):")
+
+if sexo == "M" and idade >= 18 and saude == "S":
+    print(f"{nome}:voce está apto a servir o quartel.")
+    
+else:
+    print(f"{nome}:voce não está apto a servir o quartel.")
+    
+
+
+        
+            

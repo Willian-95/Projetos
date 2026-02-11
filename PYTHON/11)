@@ -1,0 +1,12 @@
+
+nome = input("digite seu nome:")
+idade = int(input("digite sua idade:"))
+
+if idade < 16:
+    classe = "não_eleitor."
+elif 18 <= idade  <= 65:
+    classe ="eleitor obrigatorio."
+else: 
+    classe = "eleitor fecultativo"
+    
+print(f"{nome}, com  {idade} anos, você é:{classe}")

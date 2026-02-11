@@ -1,0 +1,45 @@
+
+nome = input("digite seu nome:")
+idade = int(input("digite sua idade:"))
+valor_v = float(input("digite o valor do seu veiculo:"))
+entrada = float(input("digite o valor da sua entrada:"))
+prazo_pagamento = float(input("digite o prazo do pagamento ate (48 vezes):"))
+score_creditos = float(input("digite seu  score de (0 a 1000):"))
+
+valor_financiado = valor_v - entrada 
+
+
+
+if idade > 70 and prazo_pagamento > 24:
+        print("financiamento negado.")
+else:
+        if score_creditos >= 800:
+            taxa = 0.012
+        else:
+            if score_creditos >= 600 and score_creditos < 800:
+                taxa = 0.02
+            else:
+                if score_creditos < 600:
+                    taxa = 0.03
+                
+valor_parcela = valor_financiado * (1+ taxa * prazo_pagamento) / prazo_pagamento
+
+renda_estimada = score_creditos * 4
+rnd = renda_estimada * 0.4
+
+if rnd < valor_parcela:
+    print(f"{nome}.")
+    print("financiamento reprovado.")
+    print("parcela excede 40 % da renda estimada. ")
+else:
+        print (f"{nome}.")
+        print(f"{idade}.")
+        print(f"{score_creditos}.")
+        print(f"{valor_v}.")
+        print(f"{entrada}.")
+        print(f"{valor_financiado}.")
+        print(f"{valor_parcela:.2f}.")
+        print(f"{valor_parcela * prazo_pagamento:.2f}")
+        print(f"financiamento aprovado!") 
+
+

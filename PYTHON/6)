@@ -1,0 +1,16 @@
+
+
+nome = input("didite seu nome:")
+idade = int(input("digite sua idade:"))
+
+if idade <12:
+    print("você é criança.")
+
+if idade >=13 and idade <=17:
+    print("você adolecente. ")
+
+if idade >=18 and idade <= 59:
+    print("você é adulto.")
+
+else :
+    print("você é idoso.")

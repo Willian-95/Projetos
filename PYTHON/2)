@@ -1,0 +1,8 @@
+
+numero =int(input("digite o numero:"))
+
+dobro = numero * 2 
+
+print(f"o dobro de  {numero} é {dobro}. ")
+
+
